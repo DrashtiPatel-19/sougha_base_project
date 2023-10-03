@@ -1,0 +1,10 @@
+export '../../modules/dashboard/ui/dashboard_page.dart';
+export '../../modules/help/bindings/help_bindings.dart';
+export '../../modules/help/ui/help_page.dart';
+export '../../modules/home/ui/home_page.dart';
+export '../../modules/login/ui/login_page.dart';
+export '../../modules/splash/bindings/splash_binding.dart';
+export '../../modules/splash/ui/splash_page.dart';
+export 'app_pages.dart';
+export 'app_paths.dart';
+export 'app_routes.dart';
