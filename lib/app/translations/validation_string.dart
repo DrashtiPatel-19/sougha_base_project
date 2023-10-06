@@ -6,11 +6,12 @@ class ValidationString extends Translations {
         'en_US': enUS,
       };
 
-  static const String pleaseEnterEmailIdKey = "pleaseEnterEmailIdKey";
-  static const String pleaseEnterMobileNoKey = "pleaseEnterMobileNoKey";
+  static const String pleaseEnterEmailIdKey = "please Enter EmailId ";
+  static const String pleaseEnterMobileNoKey = "please Enter MobileNo ";
   static const String invalidEmailIdKey = "invalidEmailIdKey";
   static const String invalidMobileNoKey = "invalidMobileNoKey";
-  static const String pleaseEnterPasswordKey = "pleaseEnterPasswordKey";
+  static const String pleaseEnterPasswordKey = "please Enter Password";
+  static const String pleaseEnterUsernameKey = "please Enter Fullname";
   static const String passwordShouldHaveKey = "passwordShouldHaveKey";
   static const String pleaseEnterConfirmPasswordKey =
       "pleaseEnterConfirmPasswordKey";

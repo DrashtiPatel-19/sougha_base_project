@@ -28,6 +28,9 @@ class $AssetsPngGen {
   AssetGenImage get icAppbarLogo =>
       const AssetGenImage('assets/png/ic_appbar_logo.png');
 
+  AssetGenImage get icMainLogo =>
+      const AssetGenImage('assets/png/ic_main_logo.png');
+
   /// File path: assets/png/ic_small_bubble_bg_left.png
   AssetGenImage get icSmallBubbleBgLeft =>
       const AssetGenImage('assets/png/ic_small_bubble_bg_left.png');

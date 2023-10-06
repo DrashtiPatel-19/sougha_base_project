@@ -4,8 +4,11 @@ class AppPages {
   AppPages._();
 
   static final routes = <GetPage>[
-    ...LoginRoutes.routes,
     ...SplashRoutes.routes,
+    ...WelcomeRoutes.routes,
+    ...LoginRoutes.routes,
+    ...SignupRoutes.routes,
+    ...SignInWithOtpRoutes.routes,
     ...DashboardRoutes.routes
   ];
 }

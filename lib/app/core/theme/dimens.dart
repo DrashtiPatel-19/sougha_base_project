@@ -114,6 +114,7 @@ abstract class Dimens {
   static const int maxLines2 = 2;
 
   static const int timeDelay2 = 2;
+  static const int timeDelay5 = 5;
   static const int timeDelay2000 = 2000;
   static const double indicatorSize40 = 40;
 }

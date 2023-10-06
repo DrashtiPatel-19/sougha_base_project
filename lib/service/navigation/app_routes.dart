@@ -13,6 +13,32 @@ class LoginRoutes {
   ];
 }
 
+class WelcomeRoutes {
+  WelcomeRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.welcome,
+        page: WelcomePage.new,
+        participatesInRootNavigator: true,
+        binding: WelcomeBinding(),
+        transition: Transition.rightToLeft),
+  ];
+}
+
+class SignupRoutes {
+  SignupRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.signup,
+        page: SignupPage.new,
+        participatesInRootNavigator: true,
+        binding: SignupBinding(),
+        transition: Transition.rightToLeft),
+  ];
+}
+
 class SplashRoutes {
   SplashRoutes._();
 
@@ -22,6 +48,19 @@ class SplashRoutes {
         page: SplashPage.new,
         participatesInRootNavigator: true,
         binding: SplashBinding(),
+        transition: Transition.rightToLeft),
+  ];
+}
+
+class SignInWithOtpRoutes {
+  SignInWithOtpRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.signinwithotp,
+        page: SignInWithOtpPage.new,
+        participatesInRootNavigator: true,
+        binding: SigninWithOtpBinding(),
         transition: Transition.rightToLeft),
   ];
 }

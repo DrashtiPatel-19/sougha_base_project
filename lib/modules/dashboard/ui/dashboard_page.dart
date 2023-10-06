@@ -35,6 +35,7 @@ class DashboardPage extends BaseGetResponsiveView<DashboardController> {
           },
           key: Get.nestedKey(1),
         ),
+
         bottomNavigationBar: const BottomNavigationWidget(),
       ),
     );

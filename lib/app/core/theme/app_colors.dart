@@ -21,6 +21,13 @@ abstract class AppColors {
     return MaterialColor(color.value, swatch);
   }
 
+  Color hexColor(String hexString) {
+    final buffer = StringBuffer();
+    if (hexString.length == 6 || hexString.length == 7) buffer.write('ff');
+    buffer.write(hexString.replaceFirst('#', ''));
+    return Color(int.parse(buffer.toString(), radix: 16));
+  }
+
   static const defaultLetterSpacing = 0.03;
 
   static final materialWhite = createMaterialColor(Colors.white);
@@ -51,24 +58,40 @@ abstract class AppColors {
   static final appBarShadow = createMaterialColor(const Color(0xFF9E9E9E));
   static final shadow = createMaterialColor(const Color(0x59000000));
   static final lightShadow = createMaterialColor(const Color(0x29000000));
-  static final bottomNavigationShadow = createMaterialColor(const Color(0xFFF7F7F7));
+  static final bottomNavigationShadow =
+      createMaterialColor(const Color(0xFFF7F7F7));
 
   static final bodyTextColor = createMaterialColor(const Color(0xFF404040));
 
   /// Used for focused state
   static final activeBlueColor = createMaterialColor(const Color(0xFF0F418C));
+
   /// Used for unfocused state
   static final inActiveGrayColor = createMaterialColor(const Color(0xFF808080));
 
   static final buttonBorderColor = createMaterialColor(const Color(0xFFEEEEEE));
 
-  static final radioUncheckedColor = createMaterialColor(const Color(0xFFB4B4B4));
-
+  static final radioUncheckedColor =
+      createMaterialColor(const Color(0xFFB4B4B4));
 
   /// Alerts colors (Used in Listing)
-  static final yellowColor = createMaterialColor(const Color(0xFFFFF53C));//#FFFF00
+  static final yellowColor =
+      createMaterialColor(const Color(0xFFFFF53C)); //#FFFF00
   static final blueColor = activeBlueColor;
   static final redColor = error;
   static const transparent = Colors.transparent;
+
+  static final colorBackground = createMaterialColor(const Color(0xFFF9F5F1));
+  static final colorStatusbar = createMaterialColor(const Color(0xFFA8A59F));
+  static final colorGradient1 = createMaterialColor(const Color(0xFFCFCBC5));
+  static final color686662 = createMaterialColor(const Color(0xFF686662));
+  static final colorE1DDD9 = createMaterialColor(const Color(0xFFE1DDD9));
+  static final colorC4C0BA = createMaterialColor(const Color(0xFFC4C0BA));
+  static final colorCFCBC5 = createMaterialColor(const Color(0xFFCFCBC5));
+  static final color212121 = createMaterialColor(const Color(0xFF212121));
+  static final colorFocusBorder = createMaterialColor(const Color(0xFFCCCCCC));
+  static final colorBFBFBF = createMaterialColor(const Color(0xFFBFBFBF));
+  static final color87744E = createMaterialColor(const Color(0xFF87744E));
+  static final colorA7C957 = createMaterialColor(const Color(0xFFA7C957));
 
 }

@@ -4,7 +4,40 @@ class SplashPage extends BaseGetResponsiveView<SplashController> {
   SplashPage({Key? key}) : super(key: key);
 
   Widget buildView() {
-    return Assets.svgs.icAppbarLogo.svg();
+    return Scaffold(
+      resizeToAvoidBottomInset: false,
+      body: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              begin: Alignment.topLeft,
+              end: Alignment.bottomLeft,
+              stops: const [
+                0.1,
+                0.1,
+                0.8
+              ],
+              colors: [
+                AppColors.colorGradient1,
+                AppColors.colorGradient1,
+                AppColors.colorStatusbar
+              ]),
+        ),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [
+            Center(
+              child: Stack(
+                children: [
+                  Assets.png.icMainLogo.image(width: 230)
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    );
   }
 
   @override

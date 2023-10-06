@@ -17,7 +17,8 @@ class LoginRepositoryImpl extends LoginRepository {
       if (loginResponse.meta?.status == true) {
         showSnackBar(AppString.loginSuccessfullyKey.tr);
         SharedPref.setValue(PrefsKey.isLoggedIn, true);
-        Get.offAllNamed(AppPaths.initial);
+        //Get.toNamed(AppPaths.dashboard);
+        Get.offAllNamed(AppPaths.dashboard);
         return loginResponse.data;
       } else {
         showSnackBar(loginResponse.meta?.message ?? '');

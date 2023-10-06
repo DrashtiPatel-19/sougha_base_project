@@ -31,6 +31,12 @@ class ApiClient extends GetxService {
       sendTimeout: const Duration(seconds: 60),
       baseUrl: configBaseUrl,
       contentType: 'application/json',
+      headers: {
+        "Platform": "Android",
+        "Version" : "1.3"
+      }
+
+
     );
     final mDio = Dio(baseOption);
     mDio.interceptors.add(HttpHandleInterceptor());

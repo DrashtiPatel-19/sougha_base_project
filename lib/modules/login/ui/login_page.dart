@@ -1,27 +1,201 @@
+import 'package:flutter_base/modules/common/common_header.dart';
+
 import '../../../utils/exports.dart';
 
 class LoginPage extends BaseGetResponsiveView<LoginController> {
   LoginPage({Key? key}) : super(key: key);
+  final GlobalKey<FormState> _formkey = GlobalKey();
+  void loginSubmitClick(){
+      if(_formkey.currentState!.validate()){
+
+      }
+  }
 
   Widget buildView() {
-    return Center(
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        crossAxisAlignment: CrossAxisAlignment.center,
-        children: [
-          Text(
-            AppString.loginDescKey.tr,
-          ),
-          const SizedBox(
-            height: Dimens.space20,
-          ),
-          ElevatedButton(
-            onPressed: () {
-              controller.loginClick();
-            },
-            child: Text(AppString.loginKey.tr),
-          ),
-        ],
+    return Container(
+      child: SingleChildScrollView(
+        child: Column(
+          children: [
+            CommonHeader(),
+            Form(
+              key: _formkey,
+              child: Padding(
+                padding: const EdgeInsets.all(20.0),
+                child: Column(
+                  children: [
+                    const SizedBox(
+                      height: 30,
+                    ),
+                    Text(
+                      AppString.txtSIGNIN,
+                      style: TextStyle(
+                          color: AppColors.color212121,
+                          fontFamily: 'josefinsans',
+                          fontSize: 20),
+                    ),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Text(
+                      AppString.txtLoginSubTitle,
+                      textAlign: TextAlign.center,
+                      style: TextStyle(
+                          color: (AppColors.color212121),
+                          fontFamily: 'josefinsans',
+                          fontSize: 16),
+                    ),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    TextFormField(
+                      controller: controller.emailController.value,
+                        validator: (value){
+                          return validateEmail(value!);
+                        },
+                        cursorColor: AppColors.color686662,
+
+                        keyboardType: TextInputType.emailAddress,
+                        decoration: InputDecoration(
+                          focusedBorder: UnderlineInputBorder(
+                              borderSide: BorderSide(color: AppColors.color686662)),
+                          enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(color: AppColors.color686662),
+                          ),
+                          label: Text(
+                            AppString.txtEmail,
+                            style: TextStyle(
+                                color: AppColors.color212121,
+                                fontFamily: 'josefinsans',
+                                fontWeight: FontWeight.w500,
+                                fontSize: 16),
+                          ),
+                        )),
+                    const SizedBox(
+                      height: 20,
+                    ),
+                    Obx(() => TextFormField(
+                      controller: controller.passwordController.value,
+
+                      validator: (value) {
+                        return validatePassword(value!);
+                      },
+                      cursorColor: AppColors.color686662,
+                      keyboardType: TextInputType.visiblePassword,
+                      decoration: InputDecoration(
+                        focusedBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                                color: AppColors.colorFocusBorder)),
+                        enabledBorder: UnderlineInputBorder(
+                            borderSide: BorderSide(
+                                color: AppColors.colorFocusBorder)),
+                        suffixIcon: IconButton(
+                          icon: Icon(
+                            controller.isPasswordHidden.value
+                                ? Icons.visibility
+                                : Icons.visibility_off,
+                            color: Colors.black45,
+                          ),
+                          onPressed: () {
+                            controller.isPasswordHidden.value =
+                            !controller.isPasswordHidden.value;
+                          },
+                        ),
+                        label: Text(
+                          AppString.txtPassword,
+                          style: TextStyle(
+                              color: AppColors.color212121,
+                              fontFamily: 'josefinsans',
+                              fontWeight: FontWeight.w500,
+                              fontSize: 16),
+                        ),
+                      ),
+                    )),
+                    const SizedBox(
+                      height: 15,
+                    ),
+                    Row(
+                      crossAxisAlignment: CrossAxisAlignment.end,
+                      mainAxisAlignment: MainAxisAlignment.end,
+                      children: [
+                        Text(
+                          AppString.txtResetPassword,
+                          style: TextStyle(
+                              color: AppColors.color87744E,
+                              fontFamily: 'josefinsans'),
+                          textAlign: TextAlign.end,
+                        ),
+                      ],
+                    ),
+                    SizedBox(height: 30,),
+                    ElevatedButton(
+                        onPressed: () {
+                          loginSubmitClick();
+                          controller.callLoginApi();
+                        },
+                        style: ButtonStyle(
+                            side: MaterialStatePropertyAll(
+                              BorderSide(
+                                color: AppColors.color686662,
+                                style: BorderStyle.solid,
+                                strokeAlign: 1,
+                                width: Dimens.borderWidth1 / 2,
+                              ),
+                            ),
+                            minimumSize: MaterialStatePropertyAll(
+                              const Size.fromHeight(50),
+                            ),
+                            shape:
+                            MaterialStatePropertyAll(RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(8),
+                            )),
+                            backgroundColor:
+                            MaterialStatePropertyAll(AppColors.color686662)),
+                        child: const Text(
+                          AppString.txtSignIn,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'josefinsans',
+                              fontSize: 16),
+                        )),
+                    SizedBox(height: 20,),
+                    Text(
+                      AppString.txtOr,
+                      style: TextStyle(
+                          color: Colors.black,
+                          fontFamily: 'josefinsans',
+                          fontSize: 18,
+                          fontWeight: FontWeight.w400),
+                    ),
+                    SizedBox(height: 20,),
+                    ElevatedButton(
+                      onPressed: () {
+                        controller.signInOtpClick();
+                      },
+                      child: Text(
+                        AppString.txtSigninWithOtp,
+                        style: TextStyle(
+                            color: AppColors.color212121,
+                            fontFamily: 'josefinsans',
+                            fontSize: 16),
+                      ),
+                      style: OutlinedButton.styleFrom(
+                          minimumSize: const Size.fromHeight(50),
+                          side: BorderSide(
+                            color: AppColors.color686662,
+                            style: BorderStyle.solid,
+                            strokeAlign: 1,
+                          ),
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(8),
+                          )),
+                    )
+
+                  ],
+                ),
+              ),
+            )
+          ],
+        ),
       ),
     );
   }

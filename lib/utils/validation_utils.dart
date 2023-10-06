@@ -12,8 +12,8 @@ bool isPasswordValidate(String password) {
   return password.contains(RegExpressions.password) ? true : false;
 }
 
-bool isContactNumberValidate(String password) {
-  return password.contains(RegExpressions.phoneNumber) ? true : false;
+bool isContactNumberValidate(String mobile) {
+  return mobile.contains(RegExpressions.phoneNumber) ? true : false;
 }
 
 String? validateEmail(String str) {
@@ -26,11 +26,29 @@ String? validateEmail(String str) {
   }
 }
 
+String? validateContact(String str) {
+  if (str.isEmpty) {
+    return ValidationString.pleaseEnterMobileNoKey.tr;
+  } else if (!isContactNumberValidate(str)) {
+    return ValidationString.invalidMobileNoKey.tr;
+  } else {
+    return null;
+  }
+}
+
 String? validatePassword(String str) {
   if (str.isEmpty) {
     return ValidationString.pleaseEnterPasswordKey.tr;
   } else if (!RegExpressions.password.hasMatch(str)) {
     return ValidationString.invalidPasswordKey.tr;
+  } else {
+    return null;
+  }
+}
+
+String? validateUsername(String str) {
+  if (str.isEmpty) {
+    return ValidationString.pleaseEnterUsernameKey.tr;
   } else {
     return null;
   }

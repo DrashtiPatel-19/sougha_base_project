@@ -73,17 +73,17 @@ abstract class MyAppTheme {
       actionsIconTheme: IconThemeData(
           color: appColorScheme.onPrimary, size: Dimens.iconSize24),
       shadowColor: AppColors.appBarShadow,
-      shape: Border(
+      /*shape: Border(
         bottom: BorderSide(
           color: AppColors.appBarShadow,
         ),
-      ),
+      ),*/
       iconTheme: IconThemeData(color: appColorScheme.onPrimary),
       titleTextStyle: AppStyles.titleLarge.copyWith(
           fontSize: Dimens.fontSize20, color: AppColors.activeBlueColor),
       systemOverlayStyle: SystemUiOverlayStyle(
         statusBarBrightness: Brightness.light,
-        statusBarColor: appColorScheme.background,
+        statusBarColor: AppColors.colorC4C0BA,
         statusBarIconBrightness: Brightness.dark,
         systemNavigationBarColor: appColorScheme.background,
         systemNavigationBarDividerColor: appColorScheme.onBackground,
@@ -276,17 +276,17 @@ abstract class MyAppTheme {
       hintStyle: AppStyles.hintStyle.copyWith(fontSize: Dimens.fontSize16),
       labelStyle: AppStyles.hintStyle.copyWith(fontSize: Dimens.fontSize16),
 
-      // enabledBorder: 10.outlineInputBorder(
-      //   borderSide: 1.borderSide(color: appColorScheme.outline),
-      // ),
+      enabledBorder: 10.outlineInputBorder(
+        borderSide: 1.borderSide(color: appColorScheme.outline),
+      ),
       focusedBorder: Dimens.radius10.outlineInputBorder(
         borderSide: Dimens.borderWidth1
             .borderSide(color: AppColors.activeBlueColor),
       ),
-      border: Dimens.radius10.outlineInputBorder(
+     /* border: Dimens.radius10.outlineInputBorder(
         borderSide:
             Dimens.borderWidth1.borderSide(color: appColorScheme.outline),
-      ),
+      ),*/
       focusColor: AppColors.activeBlueColor,
       hoverColor: Colors.transparent,
       errorStyle: AppStyles.errorStyle,
@@ -301,14 +301,14 @@ abstract class MyAppTheme {
         }
         return AppStyles.hintStyle;
       }),
-      errorBorder: Dimens.radius10.outlineInputBorder(
+     /* errorBorder: Dimens.radius10.outlineInputBorder(
         borderSide:
             Dimens.borderWidth1.borderSide(color: appColorScheme.error),
       ),
       focusedErrorBorder: Dimens.radius10.outlineInputBorder(
         borderSide:
             Dimens.borderWidth1.borderSide(color: appColorScheme.error),
-      ),
+      ),*/
       disabledBorder: Dimens.radius10.outlineInputBorder(
         borderSide: Dimens.borderWidth1
             .borderSide(color: appColorScheme.outline.withOpacity(0.5)),

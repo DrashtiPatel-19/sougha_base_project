@@ -8,8 +8,15 @@ class SplashController extends BaseGetxController {
 
   @override
   void onInit() {
-    Future.delayed(const Duration(seconds: Dimens.timeDelay2),
-        () => {toNamed(AppPaths.login)});
+    print("Pref is :$SharedPref.getBool(PrefsKey.isLoggedIn, false)");
+    Future.delayed(const Duration(seconds: Dimens.timeDelay2), () => {
+      if(SharedPref.getBool(PrefsKey.isLoggedIn)){
+        {toNamed(AppPaths.home)}
+      }else if(!SharedPref.getBool(PrefsKey.isLoggedIn)){
+        {toNamed(AppPaths.welcome)}
+      },
+
+    });
     super.onInit();
   }
 }
