@@ -155,7 +155,7 @@ class LoginPage extends BaseGetResponsiveView<LoginController> {
                           style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'josefinsans',
-                              fontSize: 16),
+                              fontSize: 18),
                         )),
                     SizedBox(height: 20,),
                     Text(
@@ -176,7 +176,7 @@ class LoginPage extends BaseGetResponsiveView<LoginController> {
                         style: TextStyle(
                             color: AppColors.color212121,
                             fontFamily: 'josefinsans',
-                            fontSize: 16),
+                            fontSize: 18),
                       ),
                       style: OutlinedButton.styleFrom(
                           minimumSize: const Size.fromHeight(50),

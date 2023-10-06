@@ -1,8 +1,12 @@
+import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+
 import '../../../../utils/exports.dart';
 
-class SigninWithOtpController extends BaseGetxController {
+class OtpVerificationController extends BaseGetxController {
 
-  final emailController = TextEditingController().obs;
+  final otpVerified = OtpTextField().obs;
+  final secondsRemaining = 30;
+
 
 
   @override
@@ -10,8 +14,10 @@ class SigninWithOtpController extends BaseGetxController {
     return ToolBarModel(isToolBarVisible: false, currentController: this);
   }
 
-  void continueBtnClick(){
-    Get.toNamed(AppPaths.otpverification);
+  void checkOtp(){
+    if(otpVerified.value == "0000"){
+      Get.toNamed(AppPaths.dashboard);
+    }
   }
 
 

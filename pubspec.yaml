@@ -59,6 +59,7 @@ dependencies:
   awesome_dio_interceptor: ^1.0.0 # Network process logger (Logger interceptor), platform: All.
   encrypt: ^5.0.1
   firebase_core: ^2.16.0
+  flutter_otp_text_field:
 
 
 dev_dependencies:

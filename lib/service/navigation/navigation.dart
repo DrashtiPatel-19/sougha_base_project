@@ -11,6 +11,8 @@ export '../../modules/signup/ui/signup_page.dart';
 export '../../modules/signup/binding/signup_binding.dart';
 export '../../modules/sign_in_with_otp/bindings/signinwithotp_binding.dart';
 export '../../modules/sign_in_with_otp/ui/signinwithotp_page.dart';
+export '../../modules/otp_verification/bindings/otpverification_binding.dart';
+export '../../modules/otp_verification/ui/otpverification_page.dart';
 export 'app_pages.dart';
 export 'app_paths.dart';
 export 'app_routes.dart';

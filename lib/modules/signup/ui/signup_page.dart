@@ -212,6 +212,7 @@ class SignupPage extends BaseGetResponsiveView<SignupController> {
                             if(cPass != controller.passwordController.value){
                               return AppString.validationPassNotMatch;
                             }
+                            return null;
                           },
                           keyboardType: TextInputType.visiblePassword,
                           decoration: InputDecoration(
@@ -340,7 +341,7 @@ class SignupPage extends BaseGetResponsiveView<SignupController> {
                           style: TextStyle(
                               color: Colors.white,
                               fontFamily: 'josefinsans',
-                              fontSize: 16),
+                              fontSize: 18),
                         )),
                   ],
                 ),

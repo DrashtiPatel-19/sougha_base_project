@@ -65,6 +65,19 @@ class SignInWithOtpRoutes {
   ];
 }
 
+class OtpVerificationRoutes {
+  OtpVerificationRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.otpverification,
+        page: OtpVerificationPage.new,
+        participatesInRootNavigator: true,
+        binding: OtpVerificationBinding(),
+        transition: Transition.rightToLeft),
+  ];
+}
+
 class DashboardRoutes {
   DashboardRoutes._();
 

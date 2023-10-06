@@ -44,8 +44,16 @@ class AppString extends Translations {
   static const String txtPassword = "Password*";
   static const String txtPassHint = "------------";
   static const String txtResetPassword = "Reset your password";
+  static const String txtSigninWithMobile = "Or sign in with your mobile number";
   static const String txtOr = "or";
   static const String txtClose = "Close";
+  static const String txtContinue = "Continue";
+  static const String txtOtpVerification = "OTP VERIFICATION";
+  static const String txtOtpVerificationSub = "Enter OTP send to +91 9512362200";
+  static const String txtResendOtp = "Resend OTP";
+  static const String txtDontReceivedOtp = "Didn't received OTP?";
+
+
   static const String txtSignupHeading = "Setup your account";
   static const String txtSignup = "Sign Up";
   static const String txtSigninWithOtp = "Sign in with OTP";

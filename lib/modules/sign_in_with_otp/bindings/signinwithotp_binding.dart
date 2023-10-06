@@ -6,4 +6,6 @@ class SigninWithOtpBinding extends Bindings {
    Get.put<SigninWithOtpController>(SigninWithOtpController() , tag: (SigninWithOtpController).toString());
   }
 
+
+
 }
