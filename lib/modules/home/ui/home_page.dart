@@ -5,11 +5,15 @@ class HomePage extends BaseGetResponsiveView<HomeController> {
 
   Widget buildView() {
     return Center(
-      child: CustomTextLabelWidget(
-        textAlign: TextAlign.center,
-        style: AppStyles.textNormal,
-        label: AppString.homeKey.tr,
-      ),
+      child: TextButton(
+        onPressed: () {
+          SharedPref.clearData();
+          Get.toNamed(AppPaths.welcome);
+        },
+        child: Text(
+          "Logout",
+        ),
+      )
     );
   }
 
