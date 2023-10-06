@@ -15,9 +15,8 @@ class OtpVerificationController extends BaseGetxController {
   }
 
   void checkOtp(){
-    if(otpVerified.value == "0000"){
-      Get.toNamed(AppPaths.dashboard);
-    }
+      Get.toNamed(AppPaths.changepassword);
+
   }
 
 

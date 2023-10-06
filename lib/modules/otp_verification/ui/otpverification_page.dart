@@ -64,7 +64,7 @@ class OtpVerificationPage
                   ),
                   ElevatedButton(
                       onPressed: () {
-
+                          controller.checkOtp();
                       },
                       style: ButtonStyle(
                           side: MaterialStatePropertyAll(

@@ -78,6 +78,32 @@ class OtpVerificationRoutes {
   ];
 }
 
+class ChangePasswordRoutes {
+  ChangePasswordRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.changepassword,
+        page: ChangePasswordPage.new,
+        participatesInRootNavigator: true,
+        binding: ChangePasswordBinding(),
+        transition: Transition.rightToLeft),
+  ];
+}
+
+/*class ChangePasswordConfirmationRoutes {
+  ChangePasswordConfirmationRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.changepasswordconfirmation,
+        page: ChangePasswordConfirmationPage.new,
+        participatesInRootNavigator: true,
+        binding: ChangePasswordConfirmationBinding(),
+        transition: Transition.rightToLeft),
+  ];
+}*/
+
 class DashboardRoutes {
   DashboardRoutes._();
 

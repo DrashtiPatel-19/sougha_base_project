@@ -10,6 +10,7 @@ class AppPages {
     ...SignupRoutes.routes,
     ...SignInWithOtpRoutes.routes,
     ...OtpVerificationRoutes.routes,
+    ...ChangePasswordRoutes.routes,
     ...DashboardRoutes.routes
   ];
 }

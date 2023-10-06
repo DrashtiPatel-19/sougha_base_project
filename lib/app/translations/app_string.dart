@@ -52,6 +52,10 @@ class AppString extends Translations {
   static const String txtOtpVerificationSub = "Enter OTP send to +91 9512362200";
   static const String txtResendOtp = "Resend OTP";
   static const String txtDontReceivedOtp = "Didn't received OTP?";
+  static const String txtEnterNewPass = "Enter new password";
+  static const String txtNewPass = "New Password";
+  static const String txtConfirmPass = "Confirm Password";
+  static const String txtCreatePass = "Create Password";
 
 
   static const String txtSignupHeading = "Setup your account";
