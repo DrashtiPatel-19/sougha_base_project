@@ -40,7 +40,7 @@ class ChangePasswordController extends BaseGetxController {
 
 
     void createPasswordClick(){
-      toNamed(AppPaths.changepassword);
+      toNamed(AppPaths.changepasswordconfirmation);
     }
 
 

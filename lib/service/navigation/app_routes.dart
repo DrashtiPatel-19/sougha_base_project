@@ -91,7 +91,7 @@ class ChangePasswordRoutes {
   ];
 }
 
-/*class ChangePasswordConfirmationRoutes {
+class ChangePasswordConfirmationRoutes {
   ChangePasswordConfirmationRoutes._();
 
   static final routes = [
@@ -102,7 +102,20 @@ class ChangePasswordRoutes {
         binding: ChangePasswordConfirmationBinding(),
         transition: Transition.rightToLeft),
   ];
-}*/
+}
+
+class EmailConfirmationRoutes {
+  EmailConfirmationRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.emailverification,
+        page: EmailConfirmationPage.new,
+        participatesInRootNavigator: true,
+        binding: EmailConfirmationBinding(),
+        transition: Transition.rightToLeft),
+  ];
+}
 
 class DashboardRoutes {
   DashboardRoutes._();

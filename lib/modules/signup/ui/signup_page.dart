@@ -27,7 +27,7 @@ class SignupPage extends BaseGetResponsiveView<SignupController> {
             color: AppColors.color686662,
           ),
           onTap: () {
-            //Navigator.pop(context);
+            controller.callOnBackPress();
           },
         ),
         backgroundColor: Colors.transparent,
@@ -335,6 +335,7 @@ class SignupPage extends BaseGetResponsiveView<SignupController> {
                                 AppColors.color686662)),
                         onPressed: () {
                           signupClick();
+                          controller.callSignupClick();
                         },
                         child: Text(
                           AppString.txtSignup,

@@ -74,7 +74,15 @@ abstract class MyAppTheme {
           color: appColorScheme.onPrimary, size: Dimens.iconSize24),
       shadowColor: AppColors.appBarShadow,
       /*shape: Border(
+        bottom: Bo
+      actionsIconTheme: IconThemeData(
+          color: appColorScheme.onPrimary, size: Dimens.iconSize24),
+      shadowColor: AppColors.appBarShadow,
+      /*shape: Border(
         bottom: BorderSide(
+          color: AppColors.appBarShadow,
+        ),
+      ),*/rderSide(
           color: AppColors.appBarShadow,
         ),
       ),*/
@@ -86,10 +94,10 @@ abstract class MyAppTheme {
         statusBarColor: AppColors.colorC4C0BA,
         statusBarIconBrightness: Brightness.dark,
         systemNavigationBarColor: appColorScheme.background,
-        systemNavigationBarDividerColor: appColorScheme.onBackground,
         systemNavigationBarIconBrightness: Brightness.dark,
-        systemStatusBarContrastEnforced: true,
-        systemNavigationBarContrastEnforced: true,
+        systemNavigationBarDividerColor: appColorScheme.background,
+         /*systemStatusBarContrastEnforced: true,
+         systemNavigationBarContrastEnforced: true,*/
       ),
     );
   }

@@ -1,31 +1,11 @@
 import '../../../utils/exports.dart';
 
-class WelcomePage extends BaseGetResponsiveView<WelcomeController> {
-  WelcomePage({Key? key}) : super(key: key);
+class ChangePasswordConfirmationPage
+    extends BaseGetResponsiveView<ChangePasswordConfirmationController> {
+  ChangePasswordConfirmationPage({Key? key}) : super(key: key);
 
   Widget buildView() {
-    return Scaffold(
-      resizeToAvoidBottomInset: false,
-      extendBodyBehindAppBar: true,
-      appBar: AppBar(
-        automaticallyImplyLeading: false,
-        elevation: 0,
-        backgroundColor: Colors.transparent,
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(top: 20.0, right: 10),
-            child: IconButton(
-                onPressed: () {
-                  controller.callCloseClick();
-                },
-                icon: Icon(
-                  Icons.close,
-                  color: AppColors.color686662,
-                )),
-          )
-        ],
-      ),
-      body: Container(
+    return Container(
         width: double.infinity,
         height: double.infinity,
         decoration: BoxDecoration(
@@ -71,32 +51,36 @@ class WelcomePage extends BaseGetResponsiveView<WelcomeController> {
                     ),
                     child: Column(
                       children: [
-                        const Padding(
-                          padding: EdgeInsets.only(top: 24.0),
-                          child: Text(
-                            AppString.txtWelcome,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: 'josefinsans',
-                                fontWeight: FontWeight.w400,
-                                fontSize: 20),
-                          ),
+                        SizedBox(
+                          height: 20,
                         ),
-                        const Padding(
-                          padding: EdgeInsets.only(top: 16.0),
-                          child: Text(
-                            AppString.txtSubTitle,
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: Colors.white,
-                                fontFamily: 'josefinsans',
-                                fontWeight: FontWeight.w400,
-                                fontSize: 16),
-                          ),
+                        Assets.png.icVerificationImage.image(width: 80),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          AppString.txtCongratulations,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'josefinsans',
+                              fontWeight: FontWeight.w400,
+                              fontSize: 24),
+                        ),
+                        SizedBox(
+                          height: 20,
+                        ),
+                        Text(
+                          AppString.txtChangePassSuccessfullMessage,
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: Colors.white,
+                              fontFamily: 'josefinsans',
+                              fontWeight: FontWeight.w400,
+                              fontSize: 20),
                         ),
                         Padding(
                           padding: const EdgeInsets.only(
-                              top: 50.0, right: 20, left: 20),
+                              top: 30.0, right: 20, left: 20),
                           child: ElevatedButton(
                               style: ButtonStyle(
                                   side: MaterialStatePropertyAll(
@@ -114,42 +98,19 @@ class WelcomePage extends BaseGetResponsiveView<WelcomeController> {
                                       RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(8),
                                   )),
-                                backgroundColor: MaterialStatePropertyAll(
-                                    AppColors.color686662
-                                )
-                              ),
+                                  backgroundColor: MaterialStatePropertyAll(
+                                      AppColors.color686662)),
                               onPressed: () {
-                                controller.signinClick();
+                                controller.callContinueClick();
                               },
                               child: Text(
-                                AppString.txtSignIn,
+                                AppString.txtContinue,
                                 style: TextStyle(
                                     color: Colors.white,
                                     fontFamily: 'josefinsans',
-                                    fontSize: 16),
+                                    fontSize: 18),
                               )),
                         ),
-                        Padding(
-                          padding: const EdgeInsets.only(
-                              top: 20.0, right: 20, left: 20),
-                          child: ElevatedButton(
-                              onPressed: () {
-                                controller.signupClick();
-                              },
-                              style: ElevatedButton.styleFrom(
-                                  shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(8)),
-                                  minimumSize: const Size.fromHeight(50),
-                                  backgroundColor: AppColors.colorE1DDD9),
-
-                              child: Text(
-                                AppString.txtCreateAccount,
-                                style: TextStyle(
-                                    color: AppColors.color686662,
-                                    fontFamily: 'josefinsans',
-                                    fontSize: 16),
-                              )),
-                        )
                       ],
                     ),
                   )
@@ -157,9 +118,7 @@ class WelcomePage extends BaseGetResponsiveView<WelcomeController> {
               ),
             )
           ],
-        ),
-      ),
-    );
+        ));
   }
 
   @override
@@ -179,6 +138,6 @@ class WelcomePage extends BaseGetResponsiveView<WelcomeController> {
 
   @override
   String getTag() {
-    return (WelcomeController).toString();
+    return (ChangePasswordConfirmationController).toString();
   }
 }

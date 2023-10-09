@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_base/base/base.dart';
 import 'package:flutter_base/modules/login/controller/login_controller.dart';
+import 'package:flutter_base/utils/exports.dart';
 import '../../app/core/theme/app_colors.dart';
 import '../../app/translations/app_string.dart';
 import '../../gen/assets.gen.dart';
@@ -10,7 +11,7 @@ class CommonHeader extends BaseGetView<LoginController> {
   Widget buildView(BuildContext context) {
     return Container(
       width: double.infinity,
-      height: 300,
+      height: 280,
       alignment: Alignment.topLeft,
       decoration: BoxDecoration(
         gradient: LinearGradient(
@@ -28,7 +29,7 @@ class CommonHeader extends BaseGetView<LoginController> {
             ]),
       ),
       child: Padding(
-        padding: const EdgeInsets.only(top: 60.0),
+        padding: const EdgeInsets.only(top: 20.0),
         child: Column(
           children: [
             Row(
@@ -36,9 +37,14 @@ class CommonHeader extends BaseGetView<LoginController> {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0, top: 10),
-                  child: Icon(
-                    Icons.arrow_back_outlined,
-                    color: AppColors.color686662,
+                  child: InkWell(
+                    child: Icon(
+                      Icons.arrow_back_outlined,
+                      color: AppColors.color686662,
+                    ),
+                    onTap: () {
+                      Get.toNamed(AppPaths.welcome);
+                    },
                   ),
                 ),
                 Padding(
@@ -53,6 +59,7 @@ class CommonHeader extends BaseGetView<LoginController> {
                 ),
               ],
             ),
+            SizedBox(height: 20,),
             Assets.png.icMainLogo.image(width: 150)
           ],
         ),

@@ -11,6 +11,8 @@ class AppPages {
     ...SignInWithOtpRoutes.routes,
     ...OtpVerificationRoutes.routes,
     ...ChangePasswordRoutes.routes,
+    ...ChangePasswordConfirmationRoutes.routes,
+    ...EmailConfirmationRoutes.routes,
     ...DashboardRoutes.routes
   ];
 }

@@ -43,13 +43,16 @@ abstract class BaseGetResponsiveView<T extends BaseGetxController>
   //---------------------------------------------------------------------------------
 
   _buildView(Widget view) {
-    return Column(
-      children: [
-        //app bar
-        MainAppBarWidget<T>(),
-        //responsive view
-        Expanded(child: view)
-      ],
+
+    return SafeArea(
+      child: Column(
+        children: [
+          //app bar
+          MainAppBarWidget<T>(),
+          //responsive view
+          Expanded(child: view)
+        ],
+      ),
     );
   }
 }

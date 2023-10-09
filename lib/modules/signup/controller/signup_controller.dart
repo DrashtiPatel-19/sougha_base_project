@@ -9,6 +9,15 @@ class SignupController extends BaseGetxController{
   final mobileController = TextEditingController().obs;
   final passwordController = TextEditingController().obs;
   final cPasswordController = TextEditingController().obs;
+
+  void callSignupClick(){
+    toNamed(AppPaths.emailverification);
+  }
+
+  void callOnBackPress(){
+    toNamed(AppPaths.login);
+  }
+
   @override
   ToolBarModel? setUpToolbar() {
     return ToolBarModel(isToolBarVisible: false, currentController: this);
