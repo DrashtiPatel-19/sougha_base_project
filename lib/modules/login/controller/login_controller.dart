@@ -10,6 +10,12 @@ class LoginController extends BaseGetxController {
     return ToolBarModel(isToolBarVisible: false, currentController: this);
   }
 
+  @override
+  void onInit() {
+
+    super.onInit();
+  }
+
   void loginClick() {
     toNamed(AppPaths.dashboard);
   }
@@ -26,9 +32,6 @@ class LoginController extends BaseGetxController {
             device_type: "Android",
             device_token:
                 "fXUd73DOREmF0LdY9bn4oY:APA91bGdt8APNc_sZ1hzr3fWkN16fWEKydDIxA8hxKyz2DWVf8RwNG3Ly6_THmstJ9b2Gq5Dwc5nwozPNimMDbpCkNbcJbe-_eKBItDxQ3Nsouh7j61V0i5FXxxouQW9R2mKHHkDwGvZ")
-
-
-
     );
 
     //userName: "nimit.bagadiya@brainvire.com", password: "Brain@2021"));

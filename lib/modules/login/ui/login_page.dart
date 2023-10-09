@@ -1,5 +1,4 @@
 import 'package:flutter_base/modules/common/common_header.dart';
-
 import '../../../utils/exports.dart';
 
 class LoginPage extends BaseGetResponsiveView<LoginController> {
@@ -131,6 +130,8 @@ class LoginPage extends BaseGetResponsiveView<LoginController> {
                         onPressed: () {
                           loginSubmitClick();
                           controller.callLoginApi();
+                          //SharedPref.setValue(PrefsKey.keyEmail, controller.emailController.value);
+                         //print("Email is : " + controller.emailController.value.toString());
                         },
                         style: ButtonStyle(
                             side: MaterialStatePropertyAll(
@@ -170,6 +171,9 @@ class LoginPage extends BaseGetResponsiveView<LoginController> {
                     ElevatedButton(
                       onPressed: () {
                         controller.signInOtpClick();
+                        SharedPref.setValue(PrefsKey.keyEmail, true);
+                        //print(SharedPref.setValue(PrefsKey.keyEmail, true));
+
                       },
                       child: Text(
                         AppString.txtSigninWithOtp,

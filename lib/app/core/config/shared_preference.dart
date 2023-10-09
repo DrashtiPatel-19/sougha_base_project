@@ -2,6 +2,8 @@ import '../../../utils/exports.dart';
 
 abstract class PrefsKey {
   static const isLoggedIn = "keyIsLoggedIn";
+  static const keyEmail = "email";
+  static const keyName = "name";
   static const currentLocale = "keyCurrentLocale";
   static const userIdKey = 'keyUserID';
 }
