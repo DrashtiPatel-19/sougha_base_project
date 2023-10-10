@@ -1,6 +1,6 @@
 import 'dart:async';
-
 import 'package:flutter/material.dart';
+
 class StartTimer extends StatefulWidget {
   const StartTimer({Key? key}) : super(key: key);
 

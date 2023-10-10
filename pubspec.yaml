@@ -60,6 +60,8 @@ dependencies:
   encrypt: ^5.0.1
   firebase_core: ^2.16.0
   flutter_otp_text_field:
+  fluttertoast: ^8.0.8
+
 
 
 dev_dependencies:

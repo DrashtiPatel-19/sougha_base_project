@@ -11,11 +11,12 @@ class BottomNavigationWidget extends BaseGetView<DashboardController> {
     return Obx(
       () => SizedBox(
         height: Dimens.bottomNavigationBarHeight,
-        child: BottomNavigationBar(
+         child: BottomNavigationBar(
           iconSize: Dimens.iconSize14,
           items: controller.navigationItems,
           onTap: controller.onItemClick,
           currentIndex: controller.currentIndex.value,
+
         ),
       ),
     );

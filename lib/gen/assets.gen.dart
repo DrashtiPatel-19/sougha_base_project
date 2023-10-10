@@ -31,6 +31,21 @@ class $AssetsPngGen {
   AssetGenImage get icMainLogo =>
       const AssetGenImage('assets/png/ic_main_logo.png');
 
+  AssetGenImage get icNavHome =>
+      const AssetGenImage('assets/png/ic_navigation_home.png');
+
+  AssetGenImage get icNavOffer =>
+      const AssetGenImage('assets/png/ic_navigation_offer.png');
+
+  AssetGenImage get icNavReward =>
+      const AssetGenImage('assets/png/ic_navigation_gift.png');
+
+  AssetGenImage get icNavBrand =>
+      const AssetGenImage('assets/png/ic_navigation_brand.png');
+
+  AssetGenImage get icNavAccount =>
+      const AssetGenImage('assets/png/ic_navigation_account.png');
+
   AssetGenImage get icVerificationImage =>
       const AssetGenImage('assets/png/ic_verification.png');
 

@@ -43,7 +43,8 @@ class CommonHeader extends BaseGetView<LoginController> {
                       color: AppColors.color686662,
                     ),
                     onTap: () {
-                      Get.toNamed(AppPaths.welcome);
+                      Get.back();
+                      //Get.toNamed(AppPaths.welcome);
                     },
                   ),
                 ),

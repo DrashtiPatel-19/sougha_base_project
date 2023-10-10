@@ -1,12 +1,30 @@
-import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+
+import 'package:fluttertoast/fluttertoast.dart';
 
 import '../../../../utils/exports.dart';
 
 class OtpVerificationController extends BaseGetxController {
 
-  final otpVerified = OtpTextField().obs;
-  final secondsRemaining = 30;
+  @override
+  void onControllerInit() {
+    super.onControllerInit();
 
+
+  }
+
+  @override
+  void onInit() {
+
+    super.onInit();
+  }
+
+  final first = TextEditingController().obs;
+  final second = TextEditingController().obs;
+  final third = TextEditingController().obs;
+  final fourth = TextEditingController().obs;
+
+  final secondsRemaining = 30;
+  final String otp = "1234";
 
 
   @override
@@ -15,7 +33,12 @@ class OtpVerificationController extends BaseGetxController {
   }
 
   void checkOtp(){
-      Get.toNamed(AppPaths.changepassword);
+   if(first.value == "1" && second.value == "2"){
+     Fluttertoast.showToast(msg: "Hello" , toastLength: Toast.LENGTH_SHORT);
+   }else{
+     Fluttertoast.showToast(msg: "Hello Error" , toastLength: Toast.LENGTH_SHORT);
+
+   }
 
   }
 

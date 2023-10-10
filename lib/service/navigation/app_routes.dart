@@ -35,7 +35,7 @@ class SignupRoutes {
         page: SignupPage.new,
         participatesInRootNavigator: true,
         binding: SignupBinding(),
-        transition: Transition.rightToLeft),
+        transition: Transition.leftToRight),
   ];
 }
 

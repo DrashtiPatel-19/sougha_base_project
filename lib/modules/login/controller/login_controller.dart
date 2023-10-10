@@ -10,10 +10,8 @@ class LoginController extends BaseGetxController {
     return ToolBarModel(isToolBarVisible: false, currentController: this);
   }
 
-  @override
-  void onInit() {
-
-    super.onInit();
+  void resetPasswordClick(){
+    toNamed(AppPaths.changepassword);
   }
 
   void loginClick() {

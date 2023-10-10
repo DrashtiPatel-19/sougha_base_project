@@ -80,7 +80,7 @@ abstract class Dimens {
   static const double toolbarExpanded180 = 180;
   static const double keyboardToolbarHeight44 = 44;
 
-  static const double bottomNavigationBarHeight = 60;
+  static const double bottomNavigationBarHeight = 70;
 
   /// Common Loader size
   static const double loaderSize24 = 24;

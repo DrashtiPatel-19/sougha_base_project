@@ -3,10 +3,6 @@ import '../../../utils/exports.dart';
 class HomePage extends BaseGetResponsiveView<HomeController> {
   HomePage({Key? key}) : super(key: key);
 
-
-
-
-
   Widget buildView() {
     return Center(
       child: TextButton(
@@ -16,8 +12,7 @@ class HomePage extends BaseGetResponsiveView<HomeController> {
         },
         child:Column(
           children: [
-
-           Text(controller.email , style: TextStyle(color: Colors.black),),
+            Text(controller.email , style: TextStyle(color: Colors.black),),
             Text(
               "Logout",
             ),

@@ -116,12 +116,17 @@ class LoginPage extends BaseGetResponsiveView<LoginController> {
                       crossAxisAlignment: CrossAxisAlignment.end,
                       mainAxisAlignment: MainAxisAlignment.end,
                       children: [
-                        Text(
-                          AppString.txtResetPassword,
-                          style: TextStyle(
-                              color: AppColors.color87744E,
-                              fontFamily: 'josefinsans'),
-                          textAlign: TextAlign.end,
+                        InkWell(
+                          child: Text(
+                            AppString.txtResetPassword,
+                            style: TextStyle(
+                                color: AppColors.color87744E,
+                                fontFamily: 'josefinsans'),
+                            textAlign: TextAlign.end,
+                          ),
+                          onTap: () {
+                              controller.resetPasswordClick();
+                          },
                         ),
                       ],
                     ),
@@ -130,8 +135,6 @@ class LoginPage extends BaseGetResponsiveView<LoginController> {
                         onPressed: () {
                           loginSubmitClick();
                           controller.callLoginApi();
-                          //SharedPref.setValue(PrefsKey.keyEmail, controller.emailController.value);
-                         //print("Email is : " + controller.emailController.value.toString());
                         },
                         style: ButtonStyle(
                             side: MaterialStatePropertyAll(
