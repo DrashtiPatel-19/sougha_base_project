@@ -7,3 +7,4 @@ export 'otp_verification/otp_verification.dart';
 export 'change_password/change_password.dart';
 export 'change_password_confirmation/change_password_confirmation.dart';
 export 'email_confirmation/email_confirmation_dialog.dart';
+export 'accounts/my_accounts.dart';

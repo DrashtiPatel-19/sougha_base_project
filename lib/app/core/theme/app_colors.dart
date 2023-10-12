@@ -94,4 +94,7 @@ abstract class AppColors {
   static final color87744E = createMaterialColor(const Color(0xFF87744E));
   static final colorA7C957 = createMaterialColor(const Color(0xFFA7C957));
   static final color707070 = createMaterialColor(const Color(0xFF707070));
+  static final colorACA9A3 = createMaterialColor(const Color(0xFFACA9A3));
+  static final color514F4C = createMaterialColor(const Color(0xFF514F4C));
+  static final color00000080 = createMaterialColor(const Color(0x80000000));
 }

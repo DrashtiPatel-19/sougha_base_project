@@ -5,6 +5,38 @@ class DashboardController extends BaseGetxController {
 
   List<BottomNavigationBarItem> navigationItems = [
     BottomNavigationBarItem(
+        label: AppString.txtHome,
+        icon: IconButton(
+          onPressed: () {},
+          icon: Assets.png.icNavHome.image(),
+        )),
+    BottomNavigationBarItem(
+        label: AppString.txtOffers,
+        icon: IconButton(
+          onPressed: () {},
+          icon: Assets.png.icNavOffer.image(),
+        )),
+    BottomNavigationBarItem(
+        label: AppString.txtRewards,
+        icon: IconButton(
+          onPressed: () {},
+          icon: Assets.png.icNavReward.image(),
+        )),
+    BottomNavigationBarItem(
+        label: AppString.txtBrands,
+        icon: IconButton(
+          onPressed: () {},
+          icon: Assets.png.icNavBrand.image(),
+        )),
+    BottomNavigationBarItem(
+        label: AppString.txtAccount,
+        icon: IconButton(
+          onPressed: () {},
+          icon: Assets.png.icNavAccount.image(),
+        ))
+
+/*
+    BottomNavigationBarItem(
       icon: Icon(
         Icons.home,
         color: AppColors.inActiveGrayColor,
@@ -15,17 +47,7 @@ class DashboardController extends BaseGetxController {
         color: AppColors.activeBlueColor,
       ),
     ),
-    BottomNavigationBarItem(
-      icon: Icon(
-        Icons.help_outline,
-        color: AppColors.inActiveGrayColor,
-      ),
-      label: AppString.helpKey.tr,
-      activeIcon: Icon(
-        Icons.help_outline,
-        color: AppColors.activeBlueColor,
-      ),
-    ),
+*/
   ];
 
   onItemClick(int tappedIndex) {
@@ -42,6 +64,28 @@ class DashboardController extends BaseGetxController {
         {
           path = AppPaths.help;
           DebugLog.i(tappedIndex);
+
+          break;
+        }
+      case 2:
+        {
+          path = AppPaths.login;
+          DebugLog.i(tappedIndex);
+
+          break;
+        }
+      case 3:
+        {
+          path = AppPaths.welcome;
+          DebugLog.i(tappedIndex);
+
+          break;
+        }
+      case 4:
+        {
+          path = AppPaths.accounts;
+          DebugLog.i(tappedIndex);
+
           break;
         }
       default:
@@ -75,6 +119,21 @@ class DashboardController extends BaseGetxController {
           currentIndex.value = 1;
           break;
         }
+      case AppPaths.login:
+        {
+          currentIndex.value = 2;
+          break;
+        }
+      case AppPaths.welcome:
+        {
+          currentIndex.value = 3;
+          break;
+        }
+      case AppPaths.accounts:
+        {
+          currentIndex.value = 4;
+          break;
+        }
     }
   }
 
@@ -106,6 +165,21 @@ class DashboardController extends BaseGetxController {
         {
           currentIndex.value = 1;
           return HelpRoutes.routes.first.createRoute(context);
+        }
+      case AppPaths.login:
+        {
+          currentIndex.value = 2;
+          return LoginRoutes.routes.first.createRoute(context);
+        }
+      case AppPaths.welcome:
+        {
+          currentIndex.value = 3;
+          return WelcomeRoutes.routes.first.createRoute(context);
+        }
+      case AppPaths.accounts:
+        {
+          currentIndex.value = 4;
+          return AccountRoutes.routes.first.createRoute(context);
         }
     }
     return null;

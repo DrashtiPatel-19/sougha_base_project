@@ -75,4 +75,29 @@ class AppString extends Translations {
   static const String validationEmptyCPass = "Please Enter Confirm Password";
   static const String validationPassNotMatch = "Password and Confirm Password Not Match";
 
+  static const String txtHome = "Home";
+  static const String txtOffers = "Offers";
+  static const String txtRewards = "Rewards";
+  static const String txtBrands = "Brands";
+  static const String txtAccount = "Account";
+  static const String txtMyAccount = "My Account";
+  static const String txtManageAcc = "Manage your settings and preferences";
+  static const String txtMyProfile = "My Profile";
+  static const String txtTransactions = "Transactions";
+  static const String txtClaimMyRewards = "Claim My Rewards";
+  static const String txtRewardsCalculator = "Rewards Calculator";
+  static const String txtChangePassword = "Change Password";
+  static const String txtCommunication = "COMMUNICATION PREFERENCES";
+  static const String txtAppPref = "APP PREFERENCES";
+  static const String txtCustService = "CUSTOMER SERVICE";
+  static const String txtPushNotification= "Push Notification";
+  static const String txtEmailNotification= "Email Notification";
+  static const String txtSmsNotification= "SMS Notification";
+  static const String txtCountry = "Country & Language";
+  static const String txtFAQ = "FAQ's";
+  static const String txtTerms = "Terms and Condition";
+  static const String txtPrivacy = "Privacy Policy";
+  static const String txtContactUs = "Contact Us";
+  static const String txtSignOut = "Sign Out";
+
 }

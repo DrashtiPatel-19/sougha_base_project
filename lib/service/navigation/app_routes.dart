@@ -159,3 +159,17 @@ class HelpRoutes {
         transition: Transition.noTransition),
   ];
 }
+
+class AccountRoutes {
+  AccountRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.accounts,
+        page: MyAccountsPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: MyAccountsBinding(),
+        transition: Transition.noTransition),
+  ];
+}

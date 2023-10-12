@@ -371,7 +371,7 @@ abstract class MyAppTheme {
       backgroundColor: appColorScheme.background,
       selectedIconTheme: IconThemeData(
           color: AppColors.activeBlueColor, size: Dimens.iconSize28),
-      selectedItemColor: AppColors.activeBlueColor,
+      selectedItemColor: AppColors.color514F4C,
       showSelectedLabels: true,
       showUnselectedLabels: true,
       unselectedIconTheme: IconThemeData(color: AppColors.inActiveGrayColor),

@@ -22,6 +22,7 @@ class DashboardPage extends BaseGetResponsiveView<DashboardController> {
     return WillPopScope(
       onWillPop: controller.onWillPop,
       child: Scaffold(
+        resizeToAvoidBottomInset: false,
         body: Navigator(
           onPopPage: (p0, p1) => p0.didPop(p1),
           initialRoute: AppPaths.home,

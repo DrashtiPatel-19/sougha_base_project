@@ -19,6 +19,8 @@ export '../../modules/change_password_confirmation/bindings/change_password_conf
 export '../../modules/change_password_confirmation/ui/change_password_confirmation_page.dart';
 export '../../modules/email_confirmation/binding/email_confirmation_binding.dart';
 export '../../modules/email_confirmation/ui/email_confirmation_page.dart';
+export '../../modules/accounts/binding/my_accounts_binding.dart';
+export '../../modules/accounts/ui/my_accounts_page.dart';
 export 'app_pages.dart';
 export 'app_paths.dart';
 export 'app_routes.dart';
