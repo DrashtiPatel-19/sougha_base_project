@@ -11,6 +11,6 @@ abstract class AppPaths {
   static const home = '/dashboard/home';
   static const help = '/dashboard/help';
   static const dashboard = '/dashboard';
-  static const accounts = '/dashboard/account';
+  static const accounts = '/account';
   static const myprofile = '/myprofile';
 }

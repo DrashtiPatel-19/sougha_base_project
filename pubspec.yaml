@@ -62,6 +62,7 @@ dependencies:
   flutter_otp_text_field:
   fluttertoast: ^8.0.8
   motion_tab_bar_v2: ^0.3.0
+  webview_flutter: ^4.4.1
 
 
 
