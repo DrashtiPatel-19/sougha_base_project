@@ -53,5 +53,9 @@ class MyAccountsController extends BaseGetxController {
     toNamed(AppPaths.myprofile);
   }
 
+  void callTermsConditionClick(){
+    toNamed(AppPaths.termscondition);
+  }
+
 
 }

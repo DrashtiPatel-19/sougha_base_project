@@ -188,3 +188,19 @@ class MyProfileRoutes {
   ];
 }
 
+class TermsConditionRoute {
+  TermsConditionRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.termscondition,
+        page: TermsConditionPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: TermsConditionBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+
+

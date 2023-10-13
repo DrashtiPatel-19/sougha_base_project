@@ -24,6 +24,10 @@ export '../../modules/accounts/ui/my_accounts_page.dart';
 
 export '../../modules/my_profile/binding/my_profile_binding.dart';
 export '../../modules/my_profile/ui/my_profile_page.dart';
+
+export '../../modules/terms_and_condition/binding/terms_condition_binding.dart';
+export '../../modules/terms_and_condition/ui/terms_condition_page.dart';
+
 export 'app_pages.dart';
 export 'app_paths.dart';
 export 'app_routes.dart';

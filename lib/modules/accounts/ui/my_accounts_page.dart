@@ -700,7 +700,7 @@ class MyAccountsPage extends BaseGetResponsiveView<MyAccountsController> {
                                         color: AppColors.color686662,
                                       ),
                                       onTap: () {
-                                        Get.back();
+                                        controller.callTermsConditionClick();
                                         //Get.toNamed(AppPaths.welcome);
                                       },
                                     ),
@@ -708,10 +708,10 @@ class MyAccountsPage extends BaseGetResponsiveView<MyAccountsController> {
                                 ],
                               ),
                               SizedBox(
-                                height: 10,
+                                height: 15,
                               ),
                               Divider(
-                                height: 2,
+                                height: 3,
                                 color: AppColors.colorACA9A3,
                                 indent: 30,
                                 endIndent: 10,
