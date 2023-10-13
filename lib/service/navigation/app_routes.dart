@@ -173,3 +173,18 @@ class AccountRoutes {
         transition: Transition.noTransition),
   ];
 }
+
+class MyProfileRoutes {
+  MyProfileRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.myprofile,
+        page: MyProfilePage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: MyProfileBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+

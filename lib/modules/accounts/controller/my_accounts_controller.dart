@@ -49,4 +49,9 @@ class MyAccountsController extends BaseGetxController {
     toNamed(AppPaths.changepassword);
   }
 
+  void callMyProfileClick(){
+    toNamed(AppPaths.myprofile);
+  }
+
+
 }

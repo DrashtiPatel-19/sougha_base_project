@@ -70,6 +70,8 @@ class AppString extends Translations {
   static const String txtMobile = "Mobile*";
   static const String txtEmail = "Email*";
   static const String txtCPass = "Confirm Password*";
+  static const String txtDob = "Date of Birth";
+
   static const String txtAllowFaceId = "Allow Face ID to sign in";
   static const String txtRewardBalance = "Reward Balance";
   static const String validationEmptyCPass = "Please Enter Confirm Password";
@@ -93,11 +95,21 @@ class AppString extends Translations {
   static const String txtPushNotification= "Push Notification";
   static const String txtEmailNotification= "Email Notification";
   static const String txtSmsNotification= "SMS Notification";
-  static const String txtCountry = "Country & Language";
+  static const String txtCountryLang = "Country & Language";
   static const String txtFAQ = "FAQ's";
   static const String txtTerms = "Terms and Condition";
   static const String txtPrivacy = "Privacy Policy";
   static const String txtContactUs = "Contact Us";
   static const String txtSignOut = "Sign Out";
+  static const String txtProfileDetails = "Profile Details";
+  static const String txtProfilePicture = "Profile Picture";
+  static const String txtPersonalDetails = "Personal Details";
+  static const String txtGender = "Gender";
+  static const String txtMale = "Male";
+  static const String txtNationality = "Nationality";
+  static const String txtAddressDetails = "Address Details";
+  static const String txtCity = "City";
+  static const String txtCountry = "Country";
+  static const String txtSaveChanges = "Save Changes";
 
 }

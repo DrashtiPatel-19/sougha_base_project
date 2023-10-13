@@ -157,8 +157,7 @@ class MyAccountsPage extends BaseGetResponsiveView<MyAccountsController> {
                                         color: AppColors.color686662,
                                       ),
                                       onTap: () {
-                                        Get.back();
-                                        //Get.toNamed(AppPaths.welcome);
+                                        controller.callMyProfileClick();
                                       },
                                     ),
                                   )
@@ -566,7 +565,7 @@ class MyAccountsPage extends BaseGetResponsiveView<MyAccountsController> {
                                     padding: const EdgeInsets.only(
                                         left: 30.0, top: 10),
                                     child: Text(
-                                      AppString.txtCountry,
+                                      AppString.txtCountryLang,
                                       style: TextStyle(
                                           color: AppColors.color00000080,
                                           fontSize: 20,

@@ -13,6 +13,7 @@ class AppPages {
     ...ChangePasswordRoutes.routes,
     ...ChangePasswordConfirmationRoutes.routes,
     ...EmailConfirmationRoutes.routes,
-    ...DashboardRoutes.routes
+    ...DashboardRoutes.routes,
+    ...MyProfileRoutes.routes
   ];
 }
