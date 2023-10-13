@@ -10,3 +10,4 @@ export 'email_confirmation/email_confirmation_dialog.dart';
 export 'accounts/my_accounts.dart';
 export 'my_profile/my_profile.dart';
 export 'terms_and_condition/terms_condition.dart';
+export 'privacy_policy/privacy_policy.dart';

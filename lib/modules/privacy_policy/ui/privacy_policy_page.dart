@@ -1,7 +1,7 @@
 import '../../../utils/exports.dart';
 import 'package:webview_flutter/webview_flutter.dart';
 
-class TermsConditionPage extends BaseGetResponsiveView<TermsConditionController> {
+class PrivacyPolicyPage extends BaseGetResponsiveView<PrivacyPolicyController> {
 
   Widget buildView() {
     WebViewController _controller;
@@ -17,14 +17,15 @@ class TermsConditionPage extends BaseGetResponsiveView<TermsConditionController>
               Get.back();
             },),
             SizedBox(width: 20,),
-            Text(AppString.txtTerms , style: TextStyle(
+            Text(AppString.txtPrivacy , style: TextStyle(
                 color: AppColors.color00000080,
                 fontSize: 20,
                 fontFamily: 'josefinsans')),
           ],
         ),
-      ),
-      body: Center(
+      ),      body: Container(
+        margin: EdgeInsets.only(top: 10),
+        padding: EdgeInsets.all(20),
         child: WebView(
           initialUrl: 'https://www.google.com/',
           javascriptMode: JavascriptMode.unrestricted,
@@ -55,6 +56,6 @@ class TermsConditionPage extends BaseGetResponsiveView<TermsConditionController>
 
   @override
   String getTag() {
-    return (TermsConditionController).toString();
+    return (PrivacyPolicyController).toString();
   }
 }

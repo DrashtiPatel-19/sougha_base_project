@@ -15,6 +15,7 @@ class AppPages {
     ...EmailConfirmationRoutes.routes,
     ...DashboardRoutes.routes,
     ...MyProfileRoutes.routes,
-    ...TermsConditionRoute.routes
+    ...TermsConditionRoute.routes,
+    ...PrivacyPolicyRoute.routes
   ];
 }

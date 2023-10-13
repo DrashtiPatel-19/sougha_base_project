@@ -14,4 +14,5 @@ abstract class AppPaths {
   static const accounts = '/dashboard/account';
   static const myprofile = '/myprofile';
   static const termscondition = '/termscondition';
+  static const privacypolicy = '/privacypolicy';
 }

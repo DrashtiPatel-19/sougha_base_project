@@ -57,5 +57,8 @@ class MyAccountsController extends BaseGetxController {
     toNamed(AppPaths.termscondition);
   }
 
+  void callPrivacyPolicyClick(){
+    toNamed(AppPaths.privacypolicy);
+  }
 
 }

@@ -202,5 +202,19 @@ class TermsConditionRoute {
   ];
 }
 
+class PrivacyPolicyRoute {
+  PrivacyPolicyRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.privacypolicy,
+        page: PrivacyPolicyPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: PrivacyPolicyBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
 
 
