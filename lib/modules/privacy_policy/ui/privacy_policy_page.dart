@@ -23,7 +23,8 @@ class PrivacyPolicyPage extends BaseGetResponsiveView<PrivacyPolicyController> {
                 fontFamily: 'josefinsans')),
           ],
         ),
-      ),      body: Container(
+      ),
+      body: Container(
         margin: EdgeInsets.only(top: 10),
         padding: EdgeInsets.all(20),
         child: WebView(

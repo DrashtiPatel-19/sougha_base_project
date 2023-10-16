@@ -65,7 +65,6 @@ dependencies:
   webview_flutter: ^3.0.4
 
 
-
 dev_dependencies:
   flutter_test:
     sdk: flutter

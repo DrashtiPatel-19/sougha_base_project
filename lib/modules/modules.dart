@@ -13,3 +13,4 @@ export 'terms_and_condition/terms_condition.dart';
 export 'privacy_policy/privacy_policy.dart';
 export 'faqs/faqs.dart';
 export 'change_language/change_language.dart';
+export 'contact_us/contact_us.dart';

@@ -18,6 +18,7 @@ class AppPages {
     ...TermsConditionRoute.routes,
     ...PrivacyPolicyRoute.routes,
     ...FAQsRoute.routes,
-    ...ChangeLanguageRoute.routes
+    ...ChangeLanguageRoute.routes,
+    ...ContactUsRoute.routes
   ];
 }

@@ -1,3 +1,6 @@
+import 'package:flutter_base/modules/contact_us/binding/contact_us_binding.dart';
+import 'package:flutter_base/modules/contact_us/ui/contact_us_page.dart';
+
 import '../../utils/exports.dart';
 
 class LoginRoutes {
@@ -240,6 +243,20 @@ class ChangeLanguageRoute {
         transitionDuration: Duration.zero,
         preventDuplicates: true,
         binding: ChangeLanguageBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class ContactUsRoute {
+  ContactUsRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.contactus,
+        page: ContactUsPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: ContactUsBinding(),
         transition: Transition.noTransition),
   ];
 }
