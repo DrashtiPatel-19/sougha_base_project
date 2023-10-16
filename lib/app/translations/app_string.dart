@@ -111,5 +111,8 @@ class AppString extends Translations {
   static const String txtCity = "City";
   static const String txtCountry = "Country";
   static const String txtSaveChanges = "Save Changes";
+  static const String txtDummyTitle = "What is Sougha";
+  static const String txtDummyTitle1 = "Lorem ipsum dolor sit amet, consectetur.";
+  static const String txtDummyDesc = "Sougha is the AFKAR Group's rewards programme. It \nadds value to your shopping experience by offering \ngreat rewards and benefits when you shop at our \noutlets across the UAE , OMAN \nand QATAR. By signing up for the programme, \nyou get: • Free membership for life. • Sougha and \nrewards across a wide range of participating outlets. \n• The chance to earn Sougha even during sales and \npromotions. • Exclusive offers, \nincluding special invitations to in-store activities and sale previews.";
 
 }

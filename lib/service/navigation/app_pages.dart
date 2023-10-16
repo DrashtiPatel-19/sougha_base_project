@@ -16,6 +16,7 @@ class AppPages {
     ...DashboardRoutes.routes,
     ...MyProfileRoutes.routes,
     ...TermsConditionRoute.routes,
-    ...PrivacyPolicyRoute.routes
+    ...PrivacyPolicyRoute.routes,
+    ...FAQsRoute.routes
   ];
 }

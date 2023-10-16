@@ -61,4 +61,8 @@ class MyAccountsController extends BaseGetxController {
     toNamed(AppPaths.privacypolicy);
   }
 
+  void callFAQsClick(){
+    toNamed(AppPaths.faqs);
+  }
+
 }

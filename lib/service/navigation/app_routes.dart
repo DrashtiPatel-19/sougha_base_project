@@ -216,5 +216,17 @@ class PrivacyPolicyRoute {
   ];
 }
 
+class FAQsRoute {
+  FAQsRoute._();
 
+  static final routes = [
+    GetPage(
+        name: AppPaths.faqs,
+        page: FAQsPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: FAQsBinding(),
+        transition: Transition.noTransition),
+  ];
+}
 
