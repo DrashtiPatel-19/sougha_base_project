@@ -230,3 +230,16 @@ class FAQsRoute {
   ];
 }
 
+class ChangeLanguageRoute {
+  ChangeLanguageRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.changelanguage,
+        page: ChangeLanguagePage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: ChangeLanguageBinding(),
+        transition: Transition.noTransition),
+  ];
+}

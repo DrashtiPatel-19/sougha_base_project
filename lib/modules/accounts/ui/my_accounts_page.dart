@@ -581,7 +581,7 @@ class MyAccountsPage extends BaseGetResponsiveView<MyAccountsController> {
                                         color: AppColors.color686662,
                                       ),
                                       onTap: () {
-                                        Get.back();
+                                        controller.callChangeLanguageClick();
                                         //Get.toNamed(AppPaths.welcome);
                                       },
                                     ),

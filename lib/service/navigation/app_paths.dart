@@ -16,4 +16,5 @@ abstract class AppPaths {
   static const termscondition = '/termscondition';
   static const privacypolicy = '/privacypolicy';
   static const faqs = '/faqs';
+  static const changelanguage = '/changelanguage';
 }

@@ -34,6 +34,9 @@ export '../../modules/privacy_policy/ui/privacy_policy_page.dart';
 export '../../modules/faqs/binding/faqs_binding.dart';
 export '../../modules/faqs/ui/faqs_page.dart';
 
+export '../../modules/change_language/binding/change_language_binding.dart';
+export '../../modules/change_language/ui/change_language_page.dart';
+
 export 'app_pages.dart';
 export 'app_paths.dart';
 export 'app_routes.dart';

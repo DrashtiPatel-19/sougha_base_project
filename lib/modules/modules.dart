@@ -12,3 +12,4 @@ export 'my_profile/my_profile.dart';
 export 'terms_and_condition/terms_condition.dart';
 export 'privacy_policy/privacy_policy.dart';
 export 'faqs/faqs.dart';
+export 'change_language/change_language.dart';

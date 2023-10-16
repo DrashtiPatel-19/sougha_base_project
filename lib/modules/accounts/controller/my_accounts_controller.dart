@@ -65,4 +65,8 @@ class MyAccountsController extends BaseGetxController {
     toNamed(AppPaths.faqs);
   }
 
+  void callChangeLanguageClick(){
+    toNamed(AppPaths.changelanguage);
+  }
+
 }
