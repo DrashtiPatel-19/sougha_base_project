@@ -34,6 +34,13 @@ class $AssetsPngGen {
   AssetGenImage get icProfile =>
       const AssetGenImage('assets/png/ic_profile.png');
 
+  AssetGenImage get icChecked =>
+      const AssetGenImage('assets/png/ic_checked.png');
+
+  AssetGenImage get icUaeFlag =>
+      const AssetGenImage('assets/png/ic_uae_flag.png');
+
+
   AssetGenImage get icCamera =>
       const AssetGenImage('assets/png/ic_add_camera.png');
 

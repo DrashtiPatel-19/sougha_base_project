@@ -1,3 +1,6 @@
+import 'package:flutter_base/modules/contact_us/binding/contact_us_binding.dart';
+import 'package:flutter_base/modules/contact_us/ui/contact_us_page.dart';
+
 import '../../utils/exports.dart';
 
 class LoginRoutes {
@@ -170,6 +173,90 @@ class AccountRoutes {
         transitionDuration: Duration.zero,
         preventDuplicates: true,
         binding: MyAccountsBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class MyProfileRoutes {
+  MyProfileRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.myprofile,
+        page: MyProfilePage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: MyProfileBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class TermsConditionRoute {
+  TermsConditionRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.termscondition,
+        page: TermsConditionPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: TermsConditionBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class PrivacyPolicyRoute {
+  PrivacyPolicyRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.privacypolicy,
+        page: PrivacyPolicyPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: PrivacyPolicyBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class FAQsRoute {
+  FAQsRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.faqs,
+        page: FAQsPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: FAQsBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class ChangeLanguageRoute {
+  ChangeLanguageRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.changelanguage,
+        page: ChangeLanguagePage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: ChangeLanguageBinding(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class ContactUsRoute {
+  ContactUsRoute._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.contactus,
+        page: ContactUsPage.new,
+        transitionDuration: Duration.zero,
+        preventDuplicates: true,
+        binding: ContactUsBinding(),
         transition: Transition.noTransition),
   ];
 }

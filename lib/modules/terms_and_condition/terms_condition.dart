@@ -1,0 +1,1 @@
+export 'controller/terms_condition_controller.dart';

@@ -1,0 +1,1 @@
+export 'controller/faqs_controller.dart';

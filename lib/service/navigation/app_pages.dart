@@ -13,6 +13,12 @@ class AppPages {
     ...ChangePasswordRoutes.routes,
     ...ChangePasswordConfirmationRoutes.routes,
     ...EmailConfirmationRoutes.routes,
-    ...DashboardRoutes.routes
+    ...DashboardRoutes.routes,
+    ...MyProfileRoutes.routes,
+    ...TermsConditionRoute.routes,
+    ...PrivacyPolicyRoute.routes,
+    ...FAQsRoute.routes,
+    ...ChangeLanguageRoute.routes,
+    ...ContactUsRoute.routes
   ];
 }

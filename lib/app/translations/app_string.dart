@@ -70,6 +70,8 @@ class AppString extends Translations {
   static const String txtMobile = "Mobile*";
   static const String txtEmail = "Email*";
   static const String txtCPass = "Confirm Password*";
+  static const String txtDob = "Date of Birth";
+
   static const String txtAllowFaceId = "Allow Face ID to sign in";
   static const String txtRewardBalance = "Reward Balance";
   static const String validationEmptyCPass = "Please Enter Confirm Password";
@@ -93,12 +95,27 @@ class AppString extends Translations {
   static const String txtPushNotification= "Push Notification";
   static const String txtEmailNotification= "Email Notification";
   static const String txtSmsNotification= "SMS Notification";
-  static const String txtCountry = "Country & Language";
+  static const String txtCountryLang = "Country & Language";
   static const String txtFAQ = "FAQ's";
   static const String txtTerms = "Terms and Condition";
   static const String txtPrivacy = "Privacy Policy";
   static const String txtContactUs = "Contact Us";
   static const String txtSignOut = "Sign Out";
+  static const String txtProfileDetails = "Profile Details";
+  static const String txtProfilePicture = "Profile Picture";
+  static const String txtPersonalDetails = "Personal Details";
+  static const String txtGender = "Gender";
+  static const String txtMale = "Male";
+  static const String txtNationality = "Nationality";
+  static const String txtAddressDetails = "Address Details";
+  static const String txtCity = "City";
+  static const String txtCountry = "Country";
+  static const String txtSaveChanges = "Save Changes";
+  static const String txtDummyTitle = "What is Sougha";
+  static const String txtDummyTitle1 = "Lorem ipsum dolor sit amet, consectetur.";
+  static const String txtContactUsSubtext = "For any programme or account-related quries, contact the Customer Service:";
+  static const String txtContactTiming = "Customer Service available all days \nfrom: 9am - 10pm";
+  static const String txtDummyDesc = "Sougha is the AFKAR Group's rewards programme. It \nadds value to your shopping experience by offering \ngreat rewards and benefits when you shop at our \noutlets across the UAE , OMAN \nand QATAR. By signing up for the programme, \nyou get: • Free membership for life. • Sougha and \nrewards across a wide range of participating outlets. \n• The chance to earn Sougha even during sales and \npromotions. • Exclusive offers, \nincluding special invitations to in-store activities and sale previews.";
   static const String txtClaims = "Claims";
   static const String txtCalculator = "Calculator";
   static const String txtAppWallet = "Add to Apple Wallet";

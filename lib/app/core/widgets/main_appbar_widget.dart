@@ -37,6 +37,7 @@ class MainAppBarWidget<T extends BaseGetxController> extends GetResponsiveView<T
         child: AppBar(
             title: CustomTextLabelWidget(label: AppString.inPhoneKey.tr)),
       ),
+
     );
   }
 }

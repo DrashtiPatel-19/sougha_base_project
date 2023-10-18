@@ -21,6 +21,22 @@ export '../../modules/email_confirmation/binding/email_confirmation_binding.dart
 export '../../modules/email_confirmation/ui/email_confirmation_page.dart';
 export '../../modules/accounts/binding/my_accounts_binding.dart';
 export '../../modules/accounts/ui/my_accounts_page.dart';
+
+export '../../modules/my_profile/binding/my_profile_binding.dart';
+export '../../modules/my_profile/ui/my_profile_page.dart';
+
+export '../../modules/terms_and_condition/binding/terms_condition_binding.dart';
+export '../../modules/terms_and_condition/ui/terms_condition_page.dart';
+
+export '../../modules/privacy_policy/binding/privacy_policy_binding.dart';
+export '../../modules/privacy_policy/ui/privacy_policy_page.dart';
+
+export '../../modules/faqs/binding/faqs_binding.dart';
+export '../../modules/faqs/ui/faqs_page.dart';
+
+export '../../modules/change_language/binding/change_language_binding.dart';
+export '../../modules/change_language/ui/change_language_page.dart';
+
 export 'app_pages.dart';
 export 'app_paths.dart';
 export 'app_routes.dart';

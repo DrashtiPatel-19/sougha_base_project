@@ -49,4 +49,28 @@ class MyAccountsController extends BaseGetxController {
     toNamed(AppPaths.changepassword);
   }
 
+  void callMyProfileClick(){
+    toNamed(AppPaths.myprofile);
+  }
+
+  void callTermsConditionClick(){
+    toNamed(AppPaths.termscondition);
+  }
+
+  void callPrivacyPolicyClick(){
+    toNamed(AppPaths.privacypolicy);
+  }
+
+  void callFAQsClick(){
+    toNamed(AppPaths.faqs);
+  }
+
+  void callChangeLanguageClick(){
+    toNamed(AppPaths.changelanguage);
+  }
+
+  void callContactUsClick(){
+    toNamed(AppPaths.contactus);
+  }
+
 }

@@ -25,3 +25,8 @@ class DateConstants {
   static const String isoDateFormat = "yyyy-MM-ddTHH:mm:ss.SSS";
   static const String enterNotificationDateFormat = "dd/M/yyyy";
 }
+
+enum Gender {
+  male,
+  female,
+}

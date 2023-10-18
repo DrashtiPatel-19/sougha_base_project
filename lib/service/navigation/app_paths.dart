@@ -12,4 +12,10 @@ abstract class AppPaths {
   static const help = '/dashboard/help';
   static const dashboard = '/dashboard';
   static const accounts = '/dashboard/account';
+  static const myprofile = '/myprofile';
+  static const termscondition = '/termscondition';
+  static const privacypolicy = '/privacypolicy';
+  static const faqs = '/faqs';
+  static const changelanguage = '/changelanguage';
+  static const contactus = '/contactus';
 }
