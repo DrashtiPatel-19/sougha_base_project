@@ -37,7 +37,6 @@ class $AssetsPngGen {
   AssetGenImage get icCamera =>
       const AssetGenImage('assets/png/ic_add_camera.png');
 
-
   AssetGenImage get icNavHome =>
       const AssetGenImage('assets/png/ic_navigation_home.png');
 
@@ -55,6 +54,27 @@ class $AssetsPngGen {
 
   AssetGenImage get icVerificationImage =>
       const AssetGenImage('assets/png/ic_verification.png');
+
+  AssetGenImage get icBarcodeImage =>
+      const AssetGenImage('assets/png/ic_barcode.png');
+
+  AssetGenImage get icCalculatorImage =>
+      const AssetGenImage('assets/png/ic_calculator.png');
+
+  AssetGenImage get icClaimsImage =>
+      const AssetGenImage('assets/png/ic_claims.png');
+
+  AssetGenImage get icTransactionImage =>
+      const AssetGenImage('assets/png/ic_transaction.png');
+
+  AssetGenImage get icNotificationImage =>
+      const AssetGenImage('assets/png/ic_notification_read.png');
+
+  AssetGenImage get icWalletImage =>
+      const AssetGenImage('assets/png/ic_wallet.png');
+
+  AssetGenImage get icSliderImage =>
+      const AssetGenImage('assets/png/ic_slider_img.png');
 
   /// File path: assets/png/ic_small_bubble_bg_left.png
   AssetGenImage get icSmallBubbleBgLeft =>

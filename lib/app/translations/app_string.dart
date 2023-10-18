@@ -99,5 +99,8 @@ class AppString extends Translations {
   static const String txtPrivacy = "Privacy Policy";
   static const String txtContactUs = "Contact Us";
   static const String txtSignOut = "Sign Out";
+  static const String txtClaims = "Claims";
+  static const String txtCalculator = "Calculator";
+  static const String txtAppWallet = "Add to Apple Wallet";
 
 }
