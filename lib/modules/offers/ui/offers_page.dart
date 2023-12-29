@@ -1,7 +1,7 @@
 import '../../../utils/exports.dart';
 
-class HelpPage extends BaseGetResponsiveView<HelpController> {
-  HelpPage({Key? key}) : super(key: key);
+class OffersPage extends BaseGetResponsiveView<OffersController> {
+  OffersPage({Key? key}) : super(key: key);
 
   Widget buildView() {
     return Center(
@@ -30,6 +30,6 @@ class HelpPage extends BaseGetResponsiveView<HelpController> {
 
   @override
   String getTag() {
-    return (HelpController).toString();
+    return (OffersController).toString();
   }
 }

@@ -31,6 +31,27 @@ class $AssetsPngGen {
   AssetGenImage get icMainLogo =>
       const AssetGenImage('assets/png/ic_main_logo.png');
 
+  AssetGenImage get icGuestUserbanner =>
+      const AssetGenImage('assets/png/guest_user_banner.png');
+
+  AssetGenImage get icGuestCustomerServiceImage =>
+      const AssetGenImage('assets/png/ic_guest_customer_services.png');
+
+  AssetGenImage get icGuestEarnImage =>
+      const AssetGenImage('assets/png/ic_guest_earn_and_redeem.png');
+
+  AssetGenImage get icGuestExpressDeliveryImage =>
+      const AssetGenImage('assets/png/ic_guest_express_delivery.png');
+
+  AssetGenImage get icGuestGiftImage =>
+      const AssetGenImage('assets/png/ic_guest_gift.png');
+
+  AssetGenImage get icGuestOfferImage =>
+      const AssetGenImage('assets/png/ic_guest_offer.png');
+
+  AssetGenImage get icChairImage =>
+      const AssetGenImage('assets/png/chair.png');
+
   AssetGenImage get icProfile =>
       const AssetGenImage('assets/png/ic_profile.png');
 

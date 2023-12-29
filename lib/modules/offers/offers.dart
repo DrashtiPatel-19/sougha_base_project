@@ -1,0 +1,1 @@
+export 'controller/offers_controller.dart';

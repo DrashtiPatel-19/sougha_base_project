@@ -1,7 +1,11 @@
+import 'package:flutter_base/modules/my_profile/ui/radio_widget.dart';
+
 import '../../../utils/exports.dart';
 
 class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
+
   DateTime? pickedDate;
+
   int selectedOption = 1;
   String dropdownNatinality = 'Indian';
   String dropdownCountry = 'India';
@@ -134,10 +138,10 @@ class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
                       decoration: InputDecoration(
                         focusedBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         enabledBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         label: Text(
                           AppString.txtFullname,
                           style: TextStyle(
@@ -161,10 +165,10 @@ class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
                       decoration: InputDecoration(
                         focusedBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         enabledBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         suffixIcon: IconButton(
                           icon: Icon(
                             Icons.calendar_today_rounded,
@@ -186,8 +190,11 @@ class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
                       ),
                     ),
                     SizedBox(
-                      height: 20,
+                      height: 30,
                     ),
+
+
+
                     Row(
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
@@ -202,16 +209,11 @@ class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
                                 fontSize: 16),
                           ),
                         ),
-                        RadioMenuButton(
-                            value: 1,
-                            groupValue: selectedOption,
-                            onChanged: (value) {},
-                            child: Text("Male")),
-                        RadioMenuButton(
-                            value: 2,
-                            groupValue: selectedOption,
-                            onChanged: (value) {},
-                            child: Text("Female")),
+
+                        //OrderTypeButton(value: "g_male", title: "Male"),
+                        //OrderTypeButton(value: "g_female", title: "Female"),
+
+
                       ],
                     ),
                     SizedBox(
@@ -266,10 +268,10 @@ class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
                       decoration: InputDecoration(
                         focusedBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         enabledBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         label: Text(
                           AppString.txtEmail,
                           style: TextStyle(
@@ -292,10 +294,10 @@ class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
                       decoration: InputDecoration(
                         focusedBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         enabledBorder: UnderlineInputBorder(
                             borderSide:
-                                BorderSide(color: AppColors.colorFocusBorder)),
+                            BorderSide(color: AppColors.colorFocusBorder)),
                         label: Text(
                           AppString.txtMobile,
                           style: TextStyle(
@@ -443,11 +445,11 @@ class MyProfilePage extends BaseGetResponsiveView<MyProfileController> {
               SizedBox(
                 height: 20,
               ),
+
             ],
           ),
         ),
       ),
-      bottomNavigationBar: BottomNavigationWidget(),
     );
   }
 

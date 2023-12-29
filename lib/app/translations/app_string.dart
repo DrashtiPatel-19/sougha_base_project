@@ -119,5 +119,22 @@ class AppString extends Translations {
   static const String txtClaims = "Claims";
   static const String txtCalculator = "Calculator";
   static const String txtAppWallet = "Add to Apple Wallet";
+  static const String txtPartnerOffers = "Partner Offers";
+  static const String txtRecommended = "Recommended for you";
+
+  static const String txtEarnRedeemPoints = "Earn & \nRedeem Points";
+  static const String txtPriorityCustomerService = "Priority \nCustomer Service";
+  static const String txtExclusiveOffers = "Exclusive \nOffers";
+  static const String txtComplimentaryExpressDelivery = "Complimentary \nExpress Delivery";
+  static const String txtComplimentaryGifts = "Complimentary \nGifts";
+  static const String txtRewardsToReasure = "REWARDS TO \nTREASURE!";
+  static const String txtSeeBenefits = "See Benefits";
+  static const String txtWelcomeText = "Welcome to Sougha Rewards, the Landmark Group’s \naward-winning retail loyalty programme. The largest of its kind in the Middle East, Shukran rewards customers as they shop across a range of the Group’s brands and other partner brands.";
+
+  static const String txtGetInstant = "GET INSTANT \nBENEFITS";
+  static const String txtShopEarn = "SHOP \nEARN \nSAVE REPEAT";
+  static const String txtLetsgetStaeted = "Let's get started";
+  static const String txtEnjoyBenifits = "Enjoy benefits the moment you join and \nstart earning your way towards Elite \nstatus with your first order.";
+
 
 }

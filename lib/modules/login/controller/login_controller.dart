@@ -18,6 +18,10 @@ class LoginController extends BaseGetxController {
     toNamed(AppPaths.dashboard);
   }
 
+  void skipClick(){
+    toNamed(AppPaths.skiplogin);
+  }
+
   void signInOtpClick() {
     toNamed(AppPaths.signinwithotp);
   }

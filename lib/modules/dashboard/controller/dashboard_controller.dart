@@ -9,7 +9,9 @@ class DashboardController extends BaseGetxController {
         icon: IconButton(
           onPressed: () {},
           icon: Assets.png.icNavHome.image(),
-        )),
+        ),
+
+    ),
     BottomNavigationBarItem(
         label: AppString.txtOffers,
         icon: IconButton(
@@ -164,7 +166,7 @@ class DashboardController extends BaseGetxController {
       case AppPaths.help:
         {
           currentIndex.value = 1;
-          return HelpRoutes.routes.first.createRoute(context);
+          return OffersRoutes.routes.first.createRoute(context);
         }
       case AppPaths.login:
         {

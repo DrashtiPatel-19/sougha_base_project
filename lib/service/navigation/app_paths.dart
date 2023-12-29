@@ -18,4 +18,6 @@ abstract class AppPaths {
   static const faqs = '/faqs';
   static const changelanguage = '/changelanguage';
   static const contactus = '/contactus';
+  static const skiplogin = '/skiplogin';
+
 }

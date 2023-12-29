@@ -61,8 +61,8 @@ dependencies:
   firebase_core: ^2.16.0
   flutter_otp_text_field:
   fluttertoast: ^8.0.8
-  motion_tab_bar_v2: ^0.3.0
   webview_flutter: ^3.0.4
+  carousel_slider: ^4.0.0
 
 
 dev_dependencies:

@@ -1,6 +1,7 @@
 import 'package:flutter_base/modules/contact_us/binding/contact_us_binding.dart';
 import 'package:flutter_base/modules/contact_us/ui/contact_us_page.dart';
-
+import 'package:flutter_base/modules/home_without_login/bindings/home_without_login_bindings.dart';
+import 'package:flutter_base/modules/home_without_login/ui/home_without_login_page.dart';
 import '../../utils/exports.dart';
 
 class LoginRoutes {
@@ -130,7 +131,7 @@ class DashboardRoutes {
         participatesInRootNavigator: true,
         preventDuplicates: true,
         binding: DashboardBindings(),
-        children: [...HomeRoutes.routes, ...HelpRoutes.routes],
+        children: [...HomeRoutes.routes, ...OffersRoutes.routes],
         transition: Transition.noTransition),
   ];
 }
@@ -149,16 +150,30 @@ class HomeRoutes {
   ];
 }
 
-class HelpRoutes {
-  HelpRoutes._();
+class HomeWithoutLoginRoutes {
+  HomeWithoutLoginRoutes._();
+
+  static final routes = [
+    GetPage(
+        name: AppPaths.skiplogin,
+        transitionDuration: Duration.zero,
+        page: HomeWithoutLoginPage.new,
+        preventDuplicates: true,
+        binding: HomeWithoutLoginBindings(),
+        transition: Transition.noTransition),
+  ];
+}
+
+class OffersRoutes {
+  OffersRoutes._();
 
   static final routes = [
     GetPage(
         name: AppPaths.help,
-        page: HelpPage.new,
+        page: OffersPage.new,
         transitionDuration: Duration.zero,
         preventDuplicates: true,
-        binding: HelpBindings(),
+        binding: OffersBindings(),
         transition: Transition.noTransition),
   ];
 }

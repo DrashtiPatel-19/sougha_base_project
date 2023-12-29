@@ -1,6 +1,6 @@
 export '../../modules/dashboard/ui/dashboard_page.dart';
-export '../../modules/help/bindings/help_bindings.dart';
-export '../../modules/help/ui/help_page.dart';
+export '../../modules/offers/bindings/offers_bindings.dart';
+export '../../modules/offers/ui/offers_page.dart';
 export '../../modules/home/ui/home_page.dart';
 export '../../modules/login/ui/login_page.dart';
 export '../../modules/splash/bindings/splash_binding.dart';

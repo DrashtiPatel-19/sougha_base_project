@@ -34,6 +34,10 @@ class ChangeLanguagePage
                       color: AppColors.color686662,
                     ),
                   ),
+                  Expanded(child: Card(
+
+                  )),
+
                   SizedBox(
                     width: 20,
                   ),
@@ -155,13 +159,14 @@ class ChangeLanguagePage
                   },
                   itemCount: myListItem.length,
                 ),
-              )
+              ),
             ],
           ),
         ),
       ),
     );
   }
+
 
   @override
   Widget buildDesktopWidget() {
@@ -177,6 +182,7 @@ class ChangeLanguagePage
   Widget buildTabletWidget() {
     return buildView();
   }
+
 
   @override
   String getTag() {

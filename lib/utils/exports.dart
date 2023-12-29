@@ -20,7 +20,7 @@ export '../app/translations/translations.dart';
 export '../base/base.dart';
 export '../main.dart';
 export '../modules/dashboard/dashboard.dart';
-export '../modules/help/help.dart';
+export '../modules/offers/offers.dart';
 export '../modules/home/home.dart';
 export '../modules/modules.dart';
 export '../service/service.dart';

@@ -50,12 +50,17 @@ class CommonHeader extends BaseGetView<LoginController> {
                 ),
                 Padding(
                   padding: const EdgeInsets.only(right: 8.0),
-                  child: Text(
-                    AppString.txtSkip,
-                    style: TextStyle(
-                        color: AppColors.color686662,
-                        fontSize: 18,
-                        fontFamily: 'josefinsans'),
+                  child: InkWell(
+                    child: Text(
+                      AppString.txtSkip,
+                      style: TextStyle(
+                          color: AppColors.color686662,
+                          fontSize: 18,
+                          fontFamily: 'josefinsans'),
+                    ),
+                    onTap: () {
+                      controller.skipClick();
+                    },
                   ),
                 ),
               ],

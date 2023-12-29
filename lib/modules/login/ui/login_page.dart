@@ -175,9 +175,7 @@ class LoginPage extends BaseGetResponsiveView<LoginController> {
                       onPressed: () {
                         controller.signInOtpClick();
                         SharedPref.setValue(PrefsKey.keyEmail, true);
-                        //print(SharedPref.setValue(PrefsKey.keyEmail, true));
-
-                      },
+                        },
                       child: Text(
                         AppString.txtSigninWithOtp,
                         style: TextStyle(
